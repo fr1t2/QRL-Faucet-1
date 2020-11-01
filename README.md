@@ -1,6 +1,9 @@
 # QRL-Faucet
 
-> WIP and needs work! 
+
+> **WIP!!**
+
+---
 
 This is the software running the QRL Faucet hosted over at https://faucet.qrl.tips configured to give away coins once a day to any valid QRL address.
 

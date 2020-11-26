@@ -1,38 +1,85 @@
+<!-- FIX-ME Need some form validation prior to user submission
+Attempting to use https://validatejs.org/
 
-      <div class="columns">
-      <div class="column">
+{% include formValidation.html %}
+ -->
 
-        <div class="field is-grouped ">
+<!-- No mobile view of faucet form tablet and up only -->
+<div class="container is-hidden-mobile">
+  <form id="mainAddressForm" class="form-horizontal" action="/test/web/php/main.php"  method="post" novalidate>
 
-          <div class="control select is-light ">
-            <select>
-              <option>Devet</option>
-              <option>TestNet</option>
-            </select>
-          </div>
-
-          <label class="label"> </label>
-          <div class="control">
-            <input class="input is-light" type="text" placeholder="Zond Amount">
-          </div>
-
-          <label class="label"> </label>
-          <div class="control is-expanded ">
-            <input class="input is-light" type="text" placeholder="Zond Address">
-          </div>
-
-        </div>   
-
+  <div class="columns ">
+    <div class="column ">
+      <div class="field is-grouped  ">
+        <div class="control select is-light ">
+          <select name="network" id="network" required>
+            <option>Devet</option>
+            <option>TestNet</option>
+          </select>
+        </div>
+        <label class="label"> </label>
+        <div class="control" >
+          <input class="input is-light" type="number" placeholder="Zond Amount" name="amount" value="10000" required>
+        </div>
+        <label class="label"> </label>
+        <div class="control is-expanded ">
+          <input class="input is-light" type="text" placeholder="Zond Address" name="address" required>
+        </div>
+      </div>   
+    </div>
+  </div>
+  <div class="columns">
+    <div class="column is-2 is-offset-5">
+      <div class="field is-grouped is-centered">
+        <div class="control">
+          <button class="button is-large is-rounded is-uppercase has-text-weight-bold is-black is-outlined is-inverted">Submit</button>
+        </div>
       </div>
     </div>
-        <div class="columns">
-          <div class="column is-2 is-offset-5">
-          <div class="field is-grouped is-centered">
-          <div class="control">
-            <button class="button is-large is-rounded is-uppercase has-text-weight-bold is-black is-outlined is-inverted">Submit</button>
-          </div>
+  </div>
+</form>
+</div>
 
-          </div>
+<!-- Mobile only view of faucet form -->
+<div class="container is-hidden-tablet is-hidden-desktop is-hidden-widescreen is-hidden-fullhd">
+  <form id="mobileAddressForm" class="form-horizontal" action="/test/web/php/main.php" method="post" novalidate>
+  <div class="columns ">
+    <div class="column ">
+      <div class="field is-grouped  ">
+        <div class="control select is-light ">
+          <select name="network" id="network" required>
+            <option value="devnet">Devet</option>
+            <option value="testnet">TestNet</option>
+          </select>
+        </div>
+        <div class="control">
+          <input class="input is-light" type="number" placeholder="Zond Amount" name="amount" value="10000" required>
+        </div>
+      </div>   
+      <div class="field is-grouped  ">
+        <div class="control is-expanded ">
+          <input class="input is-light" type="text" placeholder="Zond Address" name="address">
+        </div>
+      </div>
+    </div>
+
+  <div class="container">
+    <div class="columns">
+    <div class="column is-6 is-centered-3">
+      <div class="field is-grouped is-centered">
+        <div class="control is-expanded">
+          <button class="button is-large is-uppercase has-text-weight-bold is-black is-outlined is-inverted " type="submit" >Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <p class="block has-text-left is-size-7">*Mobile Browser Detected</p>
+    </div>
+    </div>
+  </div>
+  </div>
+</form>
 </div>
-</div>
+    
+
 

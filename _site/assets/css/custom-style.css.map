@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "custom-style.css",
+	"sources": [
+		"custom-style.scss"
+	],
+	"sourcesContent": [
+		"#about {\n    overflow: auto; \n    background: rgb(104,104,104);\n    background: -moz-linear-gradient(0deg, rgba(0,0,0, 1) 0%, rgba(73, 73, 73, 0.75) 100%);\n    background: -webkit-linear-gradient(0deg, rgba(0,0,0, 1) 0%, rgba(73, 73, 73, 0.75) 100%);\n    background: linear-gradient(0deg, rgba(0,0,0, 1) 0%, rgba(73, 73, 73, 0.75) 100%);\n    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#000000\", endColorstr=\"#494949\", GradientType=4);\n\n\n\n    .image {\n        max-width: 20vmax;\n        margin: auto;\n\n        img {\n            border: 0.25rem dotted black;\n        }\n    }\n\n    a {\n        min-width: 25vmax;\n        margin: 0.5rem;\n    }\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,MAAM,AAAC,CACH,QAAQ,CAAE,IAAI,CACd,UAAU,CAAE,OAAgB,CAC5B,UAAU,CAAE,6DAA0E,CACtF,UAAU,CAAE,gEAA6E,CACzF,UAAU,CAAE,wDAAqE,CACjF,MAAM,CAAE,0GAA0G,CAiBrH,AAvBD,AAUI,MAVE,CAUF,MAAM,AAAC,CACH,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,IAAI,CAKf,AAjBL,AAcQ,MAdF,CAUF,MAAM,CAIF,GAAG,AAAC,CACA,MAAM,CAAE,oBAAoB,CAC/B,AAhBT,AAmBI,MAnBE,CAmBF,CAAC,AAAC,CACE,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,MAAM,CACjB"
+}

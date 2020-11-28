@@ -82,7 +82,7 @@ plugins:
   - jekyll-feed
 
 # Permalink
-permalink: "blog/:title"
+#permalink: "blog/:title"
 
 # Compress
 compress_html:

@@ -4,24 +4,20 @@
 #about {
     overflow: auto; 
     background: rgb(104,104,104);
-    background: -moz-linear-gradient(0deg, rgba(0,0,0, 1) 0%, rgba(73, 73, 73, 0.75) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(0,0,0, 1) 0%, rgba(73, 73, 73, 0.75) 100%);
-    background: linear-gradient(0deg, rgba(0,0,0, 1) 0%, rgba(73, 73, 73, 0.75) 100%);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0, 1) 0%, rgba(15, 15, 15, 0.75) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0, 1) 0%, rgba(15, 15, 15, 0.75) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0, 1) 0%, rgba(15, 15, 15, 0.75) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#494949", GradientType=4);
 
-
-
-    .image {
-        max-width: 20vmax;
-        margin: auto;
-
-        img {
-            border: 0.25rem dotted black;
-        }
-    }
-
-    a {
-        min-width: 25vmax;
-        margin: 0.5rem;
-    }
 }
+
+#faucet {
+    overflow: auto; 
+    background: rgb(104,104,104);
+    background: -mozlinear-gradient(0deg, rgba(73,73,73, .75) 0%, rgba(0, 0, 0, 0.75) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(73,73,73, .75) 0%, rgba(0, 0, 0, 0.75) 100%);
+    background: linear-gradient(0deg, rgba(73,73,73, .75) 0%, rgba(0, 0, 0, 0.75) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#494949", GradientType=4);
+
+}
+

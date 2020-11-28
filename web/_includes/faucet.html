@@ -1,30 +1,28 @@
-<section class="faucet-hero is-large has-text-centered has-background-black-ter " id="faucet">
+<section class="faucet-hero is-fullheight has-text-centered has-background-black-ter " id="faucet">
     <div class="faucet-hero-body">
         <div class="container">
-            
             <div class="columns is-gapless is-mobile has-text-light">
-
                 <div class="column ">   
                     <div class="block">
-                        
-                        <h1 class=" title has-text-light is-size-1 is-uppercase has-text-weight-bold">Zond Faucet</h1>
-
-                    <p class="block">For developers working with the Zond Blockchain</p> 
-                    </div>                 
+                        <h1 class=" title has-text-light is-size-1 is-uppercase has-text-weight-bold">{{site.coin}} Faucet</h1>
+                            <p class="block">For developers working with the {{ site.coin }} Blockchain</p> 
+                    </div>
                     <div class="block">
-
-
-                    {% include faucetForm.html %}
+                        {% include faucetForm.html %}
                     </div>
                     <br>
                     <div class="block">
-                    <p>Faucet giving out DevNet and Testnet funds to enable development. For instruction and documentation please see <a>Link to the Docs</a> or ask in our <a>discord chat</a>
+                        <p>
+                            Faucet giving out DevNet and Testnet {{ site.coin }} funds to enable development.
                         </p>
                     </div>
-
+                    <div class="block">
+                        <p class="is-italic is-size-7">
+                            *Mainnet faucet coming soon
+                        </p>
+                    </div>
                 </div>
-                
             </div>
-
         </div>
+    </div>
 </section>

@@ -7,21 +7,39 @@ url: ''
 baseurl: 
 
 # Title of the Site
-title: Zond.Co.In
+title: QRL.Co.In
 # Description of the Site
-description: Tools Built off the Zond Blockchain
+description: Innovative tools | quantum resistance
+# Paragraph in the main content hero section
+hero-slug:  <div class="block">Blockchain tools utilising the QRL network providing next level solutions to mainstream markets. We are focused on security, user friendly interface, and reliability. We see a future in blockchain solutions utilising quantum resistant, distributed, immutable ledgers.  </div><div class="block"> Initially we're offering a <a href="/faucet">faucet</a> to expand the userbase and spread some love. We have other big plans and are working to bring some new innovative solutions to the market. Stay tuned!</div>
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
 site-keywords: Zond, POS, Quantum Resistant, Cryptocurrency, Faucet
 # URL for the Image of custom Favicon
 favicon-url: 
-
+default_faucet_amount: 100
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 # heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 heroimage: /assets/images/dots.png
-aboutimage: /assets/images/zond.png
-faucetheroimage: https://images.pexels.com/photos/220445/pexels-photo-220445.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+# include footer for main hero.
+hero-footer: 
+
+# Blockchain info
+# Coin short code
+coin: QRL
+explorer-url: https://explorer.theqrl.org
+wallet-url: https://wallet.theqrl.org
+coin_repo: https://github.com/theqrl/qrl
+
+# site code info
+site_repo: https://github.com/theqrl-community/QRL-Faucet.git
+
+developed_by: #https://merkletreellc.com
+developed_by_name: Merkle Tree LLC
+
+contact-statement: QRL.co.in was started with big ambitions to bring secure tools to the masses. We are excited about future thinking projects and innovation that propels everyone into a better future.
+
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
 email: info@zond.co.in

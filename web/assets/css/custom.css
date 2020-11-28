@@ -1,3 +1,21 @@
+
+  dl {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  dt {
+    flex-basis: 20%;
+    padding: 2px 4px;
+    text-align: center;
+    color: #fff;
+  }
+  dd {
+    flex-basis: 70%;
+    flex-grow: 1;
+    margin: 0;
+    padding: 2px 4px;
+  }
+
 .about-hero.is-fullheight-with-navbar {
   min-height: calc(100vh - 3.25rem);
 }

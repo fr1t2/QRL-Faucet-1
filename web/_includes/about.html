@@ -1,22 +1,24 @@
-<section class="about-hero is-fullheight is-dark has-text-centered " id="about">
+
+       <section class="about-hero is-fullheight is-dark has-text-centered " id="about">
     <div class="about-hero-body">
-        <div class="container">
+     <div class="container">
             
             <div class="columns">
 
                 <div class="column is-centered has-text-grey-lighter">
-                    
+
+
                     <div class="block">
                         <p class="title is-spaced has-text-grey-light is-size-2 is-uppercase has-text-weight-bold">Tools for the Future</p>
                         <p class="subtitle is-4 has-text-grey-light"> Open and Secure</p>
                     </div>
 
                     <div class="block has-text-light has-text-left">
-                        <p class="block">Building open source and free tools to interact with the Zond POS blockchain. 
+                        <p class="block">Building open source and free tools to interact with the {{ site.coin }} blockchain. 
 
                         Using advanced cryptography and quantum resistant systems to secure the future. 
 
-                        Dedicated to bringing innovation and future-minded thinking to the masses with easy to digest systems and tools built off the <a target="_blank" href="https://github.com/theQRL/zond.git">Zond blockchain</a> project. </p>
+                        Dedicated to bringing innovation and future-minded thinking to the masses with easy to digest systems and tools built off the <a target="_blank" href="{{ site.coin_repo }}">{{ site.coin }} blockchain</a> project. </p>
                     </div>
                     <br>
                     <div class="columns">
@@ -37,7 +39,7 @@
                                 </p>
                             </div>
                             <div class="block">
-                                <p>Zond uses <a href="">NIST Approved</a> quantum resistant cryptography for various functions allows the use of stateful XMSS trees. We aim to bring this cryptography into an easy to use public interface with a focus on security and privacy.</p>
+                                <p>Using quantum resistant cryptography provides security today. We aim to bring this security to the public with a focus on ease of use and security.</p>
                             </div>
                         </div>
                         <div class="column is-centered">
@@ -57,7 +59,7 @@
                                 </p>
                             </div>
                             <div class="block">
-                                <p>Future solutions and great projects will be hosted here, we have great expectations! While we work on developing the next best thing, we invite you to contribute to the project. For development opportunities, please<a href="mailto:{{site.email}}">Reach Out!</a></p>
+                                <p>Future solutions and great projects will be hosted here, we have great expectations! <br>We're working on developing the next best thing.</p>
                             </div>
                         </div>
                     </div>
@@ -65,18 +67,34 @@
                     <div class="column is-centered">
    
                         <div class="block is-size-6 "><p> 
+                            <hr class="has-background-grey">
 
-                        For now we've hosted a simple faucet to help developers use the Zond blockchain.</p></div>
+                        For now we've hosted a simple faucet to help developers use the {{ site.coin }} blockchain.</p></div>
                     </div>
-                    <div class="column is-8 is-offset-2">
+                    {% if page.url == "/" %}
+                        <div class="column is-8 is-offset-2">
                         <a href="{{site.url}}{{site.baseurl}}/#faucet" class="button is-large is-rounded is-uppercase has-text-weight-bold is-black is-outlined is-inverted ">
-                            <span>Zond Faucet</span>
-                            <span class="icon is-small"> 
-                                <i class="fas fa-level-down-alt"></i>
-                            </span>
-                        </a>
-                        <p class="block"> </p>
-                    </div>
+                                <span>
+                                    {{ site.coin }} Faucet
+                                </span>
+                                <span class="icon is-small"> 
+                                    <i class="fas fa-faucet"></i>
+                                </span>
+                            </a>
+                        </div>
+                    {% elsif page.url == "/about" %}
+                        <div class="column is-8 is-offset-2">
+                        <a href="{{site.url}}{{site.baseurl}}/faucet" class="button is-large is-rounded is-uppercase has-text-weight-bold is-black is-outlined is-inverted ">
+                                <span>
+                                    {{ site.coin }} Faucet
+                                </span>
+                                <span class="icon is-small"> 
+                                    <i class="fas fa-faucet"></i>
+                                </span>
+                            </a>
+                        </div>
+                    {% endif %}
+
                 </div>
 
             </div>

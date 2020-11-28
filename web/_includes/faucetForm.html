@@ -13,17 +13,17 @@ Attempting to use https://validatejs.org/
       <div class="field is-grouped  ">
         <div class="control select is-light ">
           <select name="network" id="network" required>
-            <option>Devet</option>
             <option>TestNet</option>
+            <option>Devet</option>
           </select>
         </div>
         <label class="label"> </label>
         <div class="control" >
-          <input class="input is-light" type="number" placeholder="Zond Amount" name="amount" value="10000" required>
+          <input class="input is-light" type="number" placeholder="{{ site.coin }} Amount" name="amount" value="{{ site.default_faucet_amount }}" required>
         </div>
         <label class="label"> </label>
         <div class="control is-expanded ">
-          <input class="input is-light" type="text" placeholder="Zond Address" name="address" required>
+          <input class="input is-light" type="text" placeholder="{{ site.coin }} Address" name="address" required>
         </div>
       </div>   
     </div>
@@ -48,17 +48,17 @@ Attempting to use https://validatejs.org/
       <div class="field is-grouped  ">
         <div class="control select is-light ">
           <select name="network" id="network" required>
-            <option value="devnet">Devet</option>
             <option value="testnet">TestNet</option>
+            <option value="devnet">Devet</option>
           </select>
         </div>
         <div class="control">
-          <input class="input is-light" type="number" placeholder="Zond Amount" name="amount" value="10000" required>
+          <input class="input is-light" type="number" placeholder="{{ site.coin }} Amount" name="amount" value="{{ site.default_faucet_amount }}" required>
         </div>
       </div>   
       <div class="field is-grouped  ">
         <div class="control is-expanded ">
-          <input class="input is-light" type="text" placeholder="Zond Address" name="address">
+          <input class="input is-light" type="text" placeholder="{{ site.coin }} Address" name="address">
         </div>
       </div>
     </div>
@@ -80,6 +80,14 @@ Attempting to use https://validatejs.org/
   </div>
 </form>
 </div>
-    
-
-
+<script type="text/javascript">
+// Main address form script
+ $(document).ready(function(){
+   var $form = $('form');
+   $form.submit(function(){
+      $.post($(this).attr('action'), $(this).serialize(), function(response){
+            // do something here on success
+      },'json');
+      return false;
+   });
+});</script>

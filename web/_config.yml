@@ -2,7 +2,7 @@
 markdown: kramdown
 
 # URL of the Site
-url: 'https://qrl.co.in/'
+url: 'https://qrl.co.in'
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl: 
 
@@ -22,7 +22,7 @@ default_faucet_amount: 100
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 # heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
 heroimage: /assets/images/dots.png
-# include footer for main hero.
+# include footer text for main hero.
 hero-footer: 
 
 # Blockchain info
@@ -47,7 +47,7 @@ facebook_username:
 twitter_username: 
 instagram_username: 
 linkedin_username: 
-github                                               _username:  
+github_username:  
 youtube_channel_id: 
 reddit_username: 
 behance_username: 
@@ -55,7 +55,8 @@ dribbble_username:
 spotify_username: 
 
 # Google Analytics
-google-analytics: G-QJXBE0YSTE
+google-analytics: UA-113155333-1
+
 
 # Disqus
 disqus-shortname: 

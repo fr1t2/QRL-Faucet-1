@@ -5,7 +5,8 @@ markdown: kramdown
 url: 'https://qrl.co.in'
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl: 
-permalink: /:title
+permalink: pretty
+
 # Title of the Site
 title: QRL.Co.In
 # Description of the Site

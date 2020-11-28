@@ -78,7 +78,7 @@ This instruction assumes a clean installation of Ubuntu 16.04. You will want to 
    - Set Hostname and FQDN on server
    - Cloudflare
    - CDN Setup
-   - [Mod_Cloudflare Install](https://www.cloudflare.com/technical-resources/#mod_cloudflare) for real IP addresses
+   - [mod_remoteip Install](https://support.cloudflare.com/hc/en-us/articles/360029696071) for real IP addresses
 - Database
    - Setup Database
    - User and password

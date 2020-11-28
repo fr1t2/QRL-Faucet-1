@@ -15,7 +15,7 @@ hero-slug:  <div class="block">Blockchain tools utilising the QRL network provid
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
-site-keywords: Zond, POS, Quantum Resistant, Cryptocurrency, Faucet
+site-keywords: QRL, Blockchain, Quantum Resistant, Cryptocurrency, Faucet, ledgerS
 # URL for the Image of custom Favicon
 favicon-url: 
 default_faucet_amount: 100
@@ -42,7 +42,7 @@ contact-statement: QRL.co.in was started with big ambitions to bring secure tool
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
-email: info@zond.co.in
+email: info@qrl.co.in
 facebook_username: 
 twitter_username: 
 instagram_username: 

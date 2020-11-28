@@ -2,7 +2,7 @@
 markdown: kramdown
 
 # URL of the Site
-url: ''
+url: 'https://qrl.co.in/'
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
 baseurl: 
 
@@ -16,7 +16,7 @@ hero-slug:  <div class="block">Blockchain tools utilising the QRL network provid
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
 site-keywords: QRL, Blockchain, Quantum Resistant, Cryptocurrency, Faucet, ledgerS
-# URL for the Image of custom Favicon
+# URL for                                                                                                                  the Image of custom Favicon
 favicon-url: 
 default_faucet_amount: 100
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
@@ -47,7 +47,7 @@ facebook_username:
 twitter_username: 
 instagram_username: 
 linkedin_username: 
-github_username:  
+github                                               _username:  
 youtube_channel_id: 
 reddit_username: 
 behance_username: 

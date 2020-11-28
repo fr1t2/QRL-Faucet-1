@@ -2,6 +2,7 @@
   dl {
     display: flex;
     flex-flow: row wrap;
+    border: solid #333;
   }
   dt {
     flex-basis: 20%;
@@ -908,7 +909,7 @@
 .about-hero-body {
   flex-grow: 1;
   flex-shrink: 0;
-  padding: 3rem 1.5rem;
+  padding: 6rem 1.5rem;
 }
 
 .section {

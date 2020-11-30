@@ -11,19 +11,20 @@ Attempting to use https://validatejs.org/
   <div class="columns ">
     <div class="column ">
       <div class="field is-grouped  ">
-        <div class="control select is-light ">
+        <div class="control select is-dark ">
           <select name="network" id="network" required>
-            <option>TestNet</option>
-            <option>Devet</option>
+            <option value="mainnet">Mainnet</option>
+            <option value="testnet">TestNet</option>
+            <option value="devnet">DevNet</option>
           </select>
         </div>
         <label class="label"> </label>
         <div class="control" >
-          <input class="input is-light" type="number" placeholder="{{ site.coin }} Amount" name="amount" value="{{ site.default_faucet_amount }}" required>
+          <input class="input is-dark" type="number" placeholder="{{ site.coin }} Amount" name="amount" value="" required>
         </div>
         <label class="label"> </label>
         <div class="control is-expanded ">
-          <input class="input is-light" type="text" placeholder="{{ site.coin }} Address" name="address" required>
+          <input class="input is-dark" type="text" placeholder="{{ site.coin }} Address" name="address" required>
         </div>
       </div>   
     </div>
@@ -32,7 +33,7 @@ Attempting to use https://validatejs.org/
     <div class="column is-2 is-offset-5">
       <div class="field is-grouped is-centered">
         <div class="control">
-          <button class="button is-large is-rounded is-uppercase has-text-weight-bold is-black is-outlined is-inverted">Submit</button>
+          <button class="button is-large is-rounded is-uppercase has-text-weight-bold is-black is-outlined is-inverted" disabled>Submit</button>
         </div>
       </div>
     </div>
@@ -43,22 +44,30 @@ Attempting to use https://validatejs.org/
 <!-- Mobile only view of faucet form -->
 <div class="container is-hidden-tablet is-hidden-desktop is-hidden-widescreen is-hidden-fullhd">
   <form id="mobileAddressForm" class="form-horizontal" action="/assets/php/main.php" method="post" novalidate>
+
   <div class="columns ">
     <div class="column ">
-      <div class="field is-grouped  ">
-        <div class="control select is-light ">
+
+      <div class="field ">
+        <div class="control ">
+          <div class="select is-dark">
           <select name="network" id="network" required>
+            <option value="mainnet">MainNet</option>
             <option value="testnet">TestNet</option>
-            <option value="devnet">Devet</option>
+            <option value="devnet">DevNet</option>
           </select>
         </div>
-        <div class="control">
-          <input class="input is-light" type="number" placeholder="{{ site.coin }} Amount" name="amount" value="{{ site.default_faucet_amount }}" required>
+      </div>
         </div>
-      </div>   
-      <div class="field is-grouped  ">
-        <div class="control is-expanded ">
-          <input class="input is-light" type="text" placeholder="{{ site.coin }} Address" name="address">
+      <div class="field ">
+        <div class="control">
+          <input class="input is-dark" type="number" placeholder="{{ site.coin }} Amount" name="amount" value="" required>
+        </div>
+      </div>
+
+      <div class="field ">
+        <div class="control  ">
+          <input class="input is-dark" type="text" placeholder="{{ site.coin }} Address" name="address">
         </div>
       </div>
     </div>
@@ -68,12 +77,12 @@ Attempting to use https://validatejs.org/
     <div class="column is-6 is-centered-3">
       <div class="field is-grouped is-centered">
         <div class="control is-expanded">
-          <button class="button is-large is-uppercase has-text-weight-bold is-black is-outlined is-inverted " type="submit" >Submit</button>
+          <button class="button is-large is-uppercase has-text-weight-bold is-black is-outlined is-inverted" disabled type="submit" >Submit</button>
         </div>
       </div>
     </div>
     <div class="column">
-      <p class="block has-text-left is-size-7">*Mobile Browser Detected</p>
+      <p class="block title has-text-left is-size-7">*Mobile Browser Detected</p>
     </div>
     </div>
   </div>

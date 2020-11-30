@@ -1,10 +1,14 @@
-<nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
+<nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
     <div class="container">
 
         <!-- logo or branding image on left side -->
         <div class="navbar-brand">
             <a class="navbar-item"
-                href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
+                href="{% if page.layout == 'default' %}
+                {{site.url}}{{site.baseurl}}/#
+                {% else %}
+                {{site.url}}{{site.baseurl}}/
+                {% endif %}">
                 <strong>{{site.title}}</strong>
             </a>
             <div class="navbar-burger" data-target="navbar-menu">
@@ -15,7 +19,7 @@
         </div>
 
         <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
-        <div class="navbar-menu has-background-black" id="navbar-menu">
+        <div class="navbar-menu is-dark" id="navbar-menu">
             <!-- navbar items | left side -->
             <!-- <div class="navbar-start">
             </div> -->
@@ -23,20 +27,40 @@
             <div class="navbar-end">
                 <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
                     href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
+
                 {% if page.url == "/" %}
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
+                    <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">ABOUT</a>
                 {% endif %}
-                {% unless page.url == "/" %}
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/about">ABOUT</a>
+                {% if page.url == "/about/" %}
+                    <a class="navbar-item is-active" href="{{site.url}}{{site.baseurl}}/about">ABOUT</a>
+                {% endif %}
+
+                {% unless page.url == "/" or page.url == "/about/" %}
+                    <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/about">ABOUT</a>
                 {% endunless %}
 
                 {% if page.url == "/" %}
                     <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#faucet">FAUCET</a>
                 {% endif %}
-                {% unless page.url == "/" %}
+
+                {% if page.url == "/faucet/" %}
+                    <a class="navbar-item is-active" href="{{site.url}}{{site.baseurl}}/faucet">FAUCET</a>
+                {% endif %}
+                {% unless page.url == "/" or page.url == "/faucet/" %}
                     <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/faucet">FAUCET</a>
                 {% endunless %}
-                <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/about/#contact">CONTACT</a>
+
+
+<!--
+                {% if page.url == "/about/#contact/" %}
+                    <a class="navbar-item is-active" href="{{site.url}}{{site.baseurl}}/about/#contact">CONTACT</a>
+                {% endif %}
+
+                {% unless page.url == "/about/#contact/" %}
+                    <a class="navbar-item i" href="{{site.url}}{{site.baseurl}}/about/#contact">CONTACT</a>
+                {% endunless %}
+
+-->
               <!--  <a class="navbar-item {% if page.layout == 'blog' %}is-active{% endif %}"
                     href="{{site.url}}{{site.baseurl}}/blog">BLOG</a>-->
             </div>

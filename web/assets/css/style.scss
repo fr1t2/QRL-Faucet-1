@@ -3,40 +3,6 @@
 
 @import "main.scss";
 
-#navbar {
-    opacity: 0.95;
-}
-
-.is-active {
-    font-weight: 600;
-}
-
-.navbar-dropdown {
-    border: none;
-    right: 0;
-    left: auto;
-}
-
-a.navbar-item:hover,
-.navbar-link:hover {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
-    color: white !important;
-}
-
-a.navbar-item.is-active {
-    background-color: rgba($color: #fff, $alpha: 0.25) !important;
-    color: white !important;
-
-    &:hover {
-        background-color: rgba($color: #fff, $alpha: 0.25) !important;
-        color: grey;
-    }
-}
-
-.navbar-link:not(.is-arrowless)::after {
-    border-color: grey;
-}
-
 
 #hero {
     .hero-body {

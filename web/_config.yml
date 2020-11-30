@@ -8,7 +8,7 @@ baseurl:
 permalink: pretty
 
 # Title of the Site
-title: QRL.Co.In
+title: QRL.CO.IN
 # Description of the Site
 description: Innovative tools | quantum resistance
 # Paragraph in the main content hero section
@@ -18,7 +18,7 @@ site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
 site-keywords: QRL, Blockchain, Quantum Resistant, Cryptocurrency, Faucet, ledgerS
 # URL for                                                                                                                  the Image of custom Favicon
-favicon-url: 
+favicon-url: /assets/images/favicon.png
 default_faucet_amount: 100
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 # heroimage: https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
@@ -32,7 +32,7 @@ coin: QRL
 explorer-url: https://explorer.theqrl.org
 wallet-url: https://wallet.theqrl.org
 coin_repo: https://github.com/theqrl/qrl
-
+coin_address: Q010500542771ce655a898ce85d66adb07d6c5db24323fc3d720079d454133289ee8dc907bfe53a
 # site code info
 site_repo: https://github.com/theqrl-community/QRL-Faucet.git
 

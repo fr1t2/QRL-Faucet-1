@@ -1,57 +1,50 @@
-<section class="hero is-fullheight has-text-centered" id="contact">
-    <div class="hero-body">
-        <div class="container">
-            <a id="contact-button" href="https://m.me/{{site.facebook_username}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
-                <i class="fab fa-facebook-messenger"></i>Ping me on Messenger
-            </a>
-            <a id="contact-button" href="mailto:{{site.email}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
-                <i class="fas fa-envelope"></i>Send me an Email
-            </a>
-            <a id="contact-button" href="https://www.twitter.com/intent/tweet?screen_name={{site.twitter_username}}"
-                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
-                target="_blank">
-                <i class="fab fa-twitter"></i>Tweet me on Twitter
-            </a>
-            <hr>
-            <h3 class="is-size-5 is-uppercase has-text-weight-semibold has-text-black is-marginless">
-                You Can find me here
-            </h3>
-            <div class="column is-full is-size-3">
-                {% unless site.facebook_username == %}
-                <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-black"><i class="fab fa-facebook"></i></a>
-                {% endunless %}
-                {% unless site.twitter_username == %}
-                <a href="http://www.twitter.com/{{site.twitter_username}}" target="_blank" class="has-text-black"><i class="fab fa-twitter"></i></a>
-                {% endunless %}
-                {% unless site.instagram_username ==  %}
-                <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-black"><i class="fab fa-instagram"></i></a>
-                {% endunless %}
-                {% unless site.linkedin_username ==  %}
-                <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-black"><i class="fab fa-linkedin"></i></a>
-                {% endunless %}
-                {% unless site.github_username ==  %}
-                <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-black"><i class="fab fa-github"></i></a>
-                {% endunless %}
-                {% unless site.youtube_channel_id ==  %}
-                <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank" class="has-text-black"><i class="fab fa-youtube"></i></a>
-                {% endunless %}
-                {% unless site.reddit_username ==  %}
-                <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="has-text-black"><i class="fab fa-reddit"></i></a>
-                {% endunless %}
-                {% unless site.behance_username ==  %}
-                <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-black"><i class="fab fa-behance"></i></a>
-                {% endunless %}
-                {% unless site.dribbble_username ==  %}
-                <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank" class="has-text-black"><i class="fab fa-dribbble"></i></a>
-                {% endunless %}
-                {% unless site.spotify_username ==  %}
-                <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank" class="has-text-black"><i class="fab fa-spotify"></i></a>
-                {% endunless %}
+<section class="hero  is-fullheight is-dark has-text-centered " id="contact">
+        <div class="hero-body">
+            <div class="container has-text-centered" id="page-section">
+                <div class="section">
+                    <div class="columns ">
+                        <div class="column is-marginless">
+                            {% if page.title %}
+                                <h1 class="title is-1 is-uppercase has-text-weight-bold ">
+                                    {{ page.title }}
+                                </h1>
+                                <hr class=" has-background-dark">
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="columns is-marginless">
+                        <div class="column has-text-left" id="{{ page.title }}">
+                            <div class="block">
+                                {{ site.contact-statement }}
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="columns is-marginless ">
+                        <div class="column box has-background-black-ter is-8 is-offset-2" id="{{ page.title }}">
+                            <div class="block">
+                                <h4 class="title is-size-4 has-text-grey-lighter">Reach Out!</h4>
+                               <p class="has-text-grey-lighter">
+                                    Have a question? Interested in contributing?
+                                </p>     
+                            </div>
+                            <div class="columns">
+                                <div class="column is-6 is-offset-3">
+                                    <div class="control has-text-centered">
+                                        <dl>
+                                            <dt class="is-uppercase has-text-weight-bold is-size-5">Email: </dt>
+                                            <dd class="is-size-5 has-text-light is-uppercase">
+                                                <a href="mailto:{{ site.email }}">
+                                                    {{ site.email }}
+                                                </a>
+                                            </dd>
+                                        </dl>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>

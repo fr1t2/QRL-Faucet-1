@@ -1,19 +1,19 @@
 
-       <section class="hero is-fullheight is-dark has-text-centered " id="about">
-    <div class="about-hero-body">
-     <div class="container is-mobile">
+       <section class="hero is-fullheight is-grey has-text-centered " id="about">
+    <div class="hero-body">
+     <div class="container">
             
             <div class="columns">
 
-                <div class="column is-centered has-text-grey-lighter">
+                <div class="column is-centered ">
 
 
                     <div class="block">
-                        <p class="title is-spaced has-text-grey-light is-size-2 is-uppercase has-text-weight-bold">Tools for the Future</p>
-                        <p class="subtitle is-4 has-text-grey-light"> Open and Secure</p>
+                        <p class="title is-spaced  is-size-2 is-uppercase has-text-weight-bold">Tools for the Future</p>
+                        <p class="subtitle is-4 "> Open and Secure</p>
                     </div>
 
-                    <div class="block has-text-light ">
+                    <div class="block ">
                         <p class="block">Building open source and free tools to interact with the {{ site.coin }} blockchain. 
 
                         Using advanced cryptography and quantum resistant systems to secure the future. 
@@ -26,7 +26,7 @@
                             <hr class="has-background-grey">
                             <div class="block">
                                 <p class="title 
-                                    has-text-grey-light 
+                                    second-title
                                     is-spaced 
                                     is-4 
                                     is-uppercase 
@@ -34,19 +34,18 @@
                                     Strong Cryptography
                                 </p> 
                                 <p class="subtitle 
-                                    is-7 
-                                    has-text-grey-light"> 
+                                    is-7">
                                 </p>
                             </div>
                             <div class="block">
-                                <p>Using quantum resistant cryptography provides security today. We aim to bring this security to the public with a focus on ease of use and security.</p>
+                                <p>Using quantum resistant cryptography provides security today. We aim to bring this security with a focus on ease of use. Everyone deserves the highest level of security possible.</p>
                             </div>
                         </div>
                         <div class="column is-centered">
                             <hr class="has-background-grey">
                             <div class="block">
                                 <h4 class="title 
-                                    has-text-grey-light 
+                                     second-title
                                     is-spaced 
                                     is-4 
                                     is-uppercase 
@@ -54,23 +53,28 @@
                                     Innovative Solutions 
                                 </h4> 
                                 <p class="subtitle
-                                     is-7 
-                                     has-text-grey-light"> 
+                                     is-7">
                                 </p>
                             </div>
                             <div class="block">
-                                <p>Future solutions and great projects will be hosted here, we have great expectations! <br>We're working on developing the next best thing.</p>
+                                <p>
+Bridging the gap between ultra-secure technology and real world use-cases. Using the distributed, immutable ledger to power a fleet of tools that will change the future.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <br>
                     <div class="column is-centered">
-   
-                        <div class="block is-size-6 "><p> 
-                            <hr class="has-background-grey">
-
-                        For now we've hosted a simple faucet to help developers use the {{ site.coin }} blockchain.</p></div>
+                        <div class="block is-size-6 ">
+                            <p> 
+                                <hr class="has-background-grey">
+                                For now we've hosted a simple faucet to help developers use the {{ site.coin }} blockchain. If you would like to contribute building the next cool tools, <a href="{{site.url}}{{site.baseurl}}/about/#contact">
+                                    Get In Touch!
+                                </a>
+                            </p>
+                        </div>
                     </div>
+                    <!-- Buttons based on location -->
                     {% if page.url == "/" %}
                         <div class="column is-8 is-offset-2">
                         <a href="{{site.url}}{{site.baseurl}}/#faucet" class="button is-large is-rounded is-uppercase has-text-weight-bold is-black is-outlined is-inverted ">

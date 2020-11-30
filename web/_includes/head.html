@@ -6,9 +6,10 @@
     <title>{{site.title}}</title>
     <!-- Stylesheets -->
     
+    <link rel="stylesheet" href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/assets/css/colorCustom.css">
     <link rel="stylesheet" href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/assets/css/style.css">
     <link rel="stylesheet" href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/assets/css/custom-style.css">
-	<link rel="stylesheet" href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/assets/css/custom.css">
+    <link rel="stylesheet" href="{% if site.baseurl %}{{site.baseurl}}{% else %}{% endif %}/assets/css/custom.css">
 	<!-- fontawesome script -->
     <script src="https://kit.fontawesome.com/6a97161b76.js" crossorigin="anonymous"></script>
 	<!-- favicon -->

@@ -1,25 +1,37 @@
-<section class="faucet-hero is-fullheight has-text-centered has-background-black-ter " id="faucet">
-    <div class="faucet-hero-body">
+<section class="hero is-fullheight has-text-centered is-grey " id="faucet">
+    <div class="hero-body">
         <div class="container">
-            <div class="columns is-gapless is-mobile has-text-light">
+            <div class="columns is-gapless">
                 <div class="column ">   
                     <div class="block">
-                        <h1 class=" title has-text-light is-size-1 is-uppercase has-text-weight-bold">{{site.coin}} Faucet</h1>
-                            <p class="block">For developers working with the {{ site.coin }} Blockchain</p> 
+                        <h1 class=" title second-title is-size-2 is-uppercase has-text-weight-bold is-spaced">{{site.coin}} Faucet</h1>
+                            <p class="subtitle is-5">For developers working with the {{ site.coin }} Blockchain</p> 
                     </div>
                     <div class="block">
                         {% include faucetForm.html %}
                     </div>
+                    <div class="block">
+                        <p>Faucet giving out DevNet and Testnet {{ site.coin }} funds.</p>
+                    </div>
                     <br>
                     <div class="block">
-                        <p>
-                            Faucet giving out DevNet and Testnet {{ site.coin }} funds to enable development.
-                        </p>
+                        <div class="box has-background-black title is-size-5">
+                            <p>
+                                The Faucet is under development and will be released soon. 
+                            </p>
+                        </div>
                     </div>
                     <div class="block">
                         <p class="is-italic is-size-7">
-                            *Mainnet faucet coming soon
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">   
+                    <div class="block">
+                        <p>Buy us a coffee!<br>  </p>
+
                     </div>
                 </div>
             </div>

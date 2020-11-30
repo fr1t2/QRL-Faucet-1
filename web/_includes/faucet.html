@@ -30,11 +30,42 @@
             <div class="columns">
                 <div class="column">   
                     <div class="block">
-                        <p>Buy us a coffee!<br>  </p>
+                        <span class="button is-rounded is-uppercase is-black is-outlined is-inverted " id="coffee" >Buy us a coffee!<br>  </span>
 
+                    </div>
+                    <div class="modal">
+                    <div class="modal-background"></div>
+                        <div class="modal-content">
+                            <div class="section " id="QRL ">
+                                <h4 class="title is-size-4 has-text-left">{{ site.coin }} Donation Address:</h4>
+                                <p>{{ site.coin_address }}</p><!-- Any other Bulma elements you want -->
+                            </div>
+
+
+                            <div class="section " id="BTC">
+                                <h4 class="title is-size-4 has-text-left">BTC Donation Address:</h4>
+                                <p>{{ site.btc_address }}</p><!-- Any other Bulma elements you want -->
+                            </div>
+                            <div class="section " id="QRL Donation Address">
+                                <h4 class="title is-size-4 has-text-left">ETH Donation Address</h4>
+                                <p>{{ site.eth_address }}</p><!-- Any other Bulma elements you want -->
+                            </div>
+                        </div>
+                        <button class="modal-close is-large" aria-label="close"></button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script type="text/javascript">
+    $("#coffee").click(function() {
+  $(".modal").addClass("is-active");  
+});
+
+$(".modal-close").click(function() {
+   $(".modal").removeClass("is-active");
+});
+
+</script>

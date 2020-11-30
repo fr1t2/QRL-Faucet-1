@@ -33,6 +33,8 @@ explorer-url: https://explorer.theqrl.org
 wallet-url: https://wallet.theqrl.org
 coin_repo: https://github.com/theqrl/qrl
 coin_address: Q010500542771ce655a898ce85d66adb07d6c5db24323fc3d720079d454133289ee8dc907bfe53a
+BTC_address: Q010500542771ce655a898ce85d66adb07d6c5db24323fc3d720079d454133289ee8dc907bfe53a
+ETH_address: Q010500542771ce655a898ce85d66adb07d6c5db24323fc3d720079d454133289ee8dc907bfe53a
 # site code info
 site_repo: https://github.com/theqrl-community/QRL-Faucet.git
 

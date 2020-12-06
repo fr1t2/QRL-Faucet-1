@@ -1,0 +1,50 @@
+<section class="hero  is-fullheight is-dark has-text-centered " id="contact">
+        <div class="hero-body">
+            <div class="container has-text-centered" id="page-section">
+                <div class="section">
+                    <div class="columns ">
+                        <div class="column is-marginless">
+                            {% if page.title %}
+                                <h1 class="title is-1 is-uppercase has-text-weight-bold ">
+                                    {{ page.title }}
+                                </h1>
+                                <hr class=" has-background-dark">
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="columns is-marginless">
+                        <div class="column has-text-left" id="{{ page.title }}">
+                            <div class="block">
+                                {{ site.contact-statement }}
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="columns is-marginless ">
+                        <div class="column box has-background-black-ter is-8 is-offset-2" id="{{ page.title }}">
+                            <div class="block">
+                                <h4 class="title is-size-4 has-text-grey-lighter">Reach Out!</h4>
+                               <p class="has-text-grey-lighter">
+                                    Have a question? Interested in contributing?
+                                </p>     
+                            </div>
+                            <div class="columns">
+                                <div class="column is-6 is-offset-3">
+                                    <div class="control has-text-centered">
+                                        <dl>
+                                            <dt class="is-uppercase has-text-weight-bold is-size-5">Email: </dt>
+                                            <dd class="is-size-5 has-text-light is-uppercase">
+                                                <a href="mailto:{{ site.email }}">
+                                                    {{ site.email }}
+                                                </a>
+                                            </dd>
+                                        </dl>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

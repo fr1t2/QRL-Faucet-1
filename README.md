@@ -5,7 +5,7 @@
 
 ---
 
-This is the software running the QRL Faucet hosted over at https://faucet.qrl.tips configured to give away coins once a day to any valid QRL address.
+This is the software running the QRL Faucet hosted over at https://qrl.co.in configured to give away coins once a day to any valid QRL address.
 
 The faucet interfaces with the gRPC wallet running on a full node server side. The WalletAPI has been developed to utilize slave transactions by default.
 

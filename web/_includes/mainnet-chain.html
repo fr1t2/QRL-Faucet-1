@@ -1,130 +1,181 @@
-<section class="hero is-halfheight has-text-centered is-grey " id="faucet">
+<section class="hero is-fullheight has-text-centered is-grey " id="mainnet-chain">
     <div class="hero-body">
         <div class="container">
-            <div class="columns is-gapless">
-                <div class="column ">   
-                    <div class="block">
+            <div class="columns ">
+                <div class="column ">
+
+                   <div class="columns">
+                     <div class="column is-8 is-offset-2">
+                      <div class="block ">
                         <h1 class=" title second-title is-size-2 is-uppercase has-text-weight-bold is-spaced">{{site.coin}} Mainnet </h1>
-                            <p class="subtitle is-5"> Bootstrap Files</p> 
-                    </div>
-                    
-                    <div class="block">
+                          <p class="subtitle is-5"> Bootstrap Files</p> 
+                      </div>
+                      <div class="block">
                         <p>Use these files to speed up the syncing time for a {{ site.coin }} mainnet node.</p>
-                    </div>
-                    <div class="block">
-                        <p>The most secure approach is to spend the time to fully sync your node from scratch. This ensures your local chain is accurate to all other modes and that you are not running a forked chain. <br>
-
-                        If you don't need this security, you can use these files to bootstrap your node setup.</p>
-                    </div>
-                    <div class="block">
+                      </div>
+                      <div class="block has-text-left">
+                        <p>The most secure approach is to spend the time to fully sync your node from scratch. This ensures your local chain is accurate to all other modes and that you are not running a forked chain. If you don't need this security, you can use these files to bootstrap your node setup.</p>
+                      </div>
+                      <div class="block has-text-left">
                         <p>Un-tar these state files into your local <code>~/.qrl/data/</code> folder and start the node. This will start at the latest blockheight these files were made and only sync from there.</p>
+                      </div>
+                   </div>
+                  </div>
+
+                  <div class="columns  is-centered">
+                    <div class="column is-8 ">
+                      <hr>
+                      <div class="field is-grouped is-grouped-multiline ">
+                        <div class="control">
+                          <div class="tags  has-addons">
+                            <span class="tag is-medium is-dark">Mainnet State</span>
+                            <span class="tag is-medium is-dark">
+                              <a href="/assets/state/QRL_Mainnet_State.tar.gz">QRL_Mainnet_State.tar.gz</a>
+                            </span>
+                            <span class="tag is-medium is-dark" id="Tar_FileSize"></span>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                  </div>
+
+                  <div class="columns is-centered">
+                    <div class="column is-8  ">
+                      <div class="field is-grouped is-grouped-multiline">
+                        <div class="control">
+                          <div class="tags  has-addons">
+                            <span class="tag is-medium is-dark">Mainnet Checksums</span>
+                              <span class="tag is-medium is-dark">
+                                <a href="/assets/state/Mainnet_State_Checksums.txt">Checksums.txt</a>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
-                    <div class="columns">
-                    	<div class="column is-4 is-offset-2">
-                    			<p>QRL Mainnet State Files</p>
-                	    </div>
-                	    <div class="column is-4">
-                    			<a href="/assets/state/QRL_Mainnet_State.tar.gz">QRL_Mainnet_State.tar.gz</a> - <span id="Tar_FileSize"></span>
-                	    </div>
-                	</div>
-                	<div class="columns">
-                    	<div class="column is-4 is-offset-2">
-                    			<p>QRL Mainnet State Checksums</p>
-                	    </div>
-                	    <div class="column is-4">
-                    			<a href="/assets/state/Mainnet_State_Checksums.txt">Mainnet_State_Checksums.txt</a>
-                	    </div>
-                	</div>
+                    <div class="columns is-centered is-gapless">
+                      <div class="column is-8">
+                        <hr>
 
-                	<div class="columns">
-                    	<div class="column is-8 is-offset-2">
-                    		<div class="table-container">
-  								<table class="table is-fullwidth">
-    								<!-- Your table content -->
-    								 <thead>
-    									<tr>
-      										<th><abbr title="Position">State</abbr></th>
-      										<th>Data</th>
-
-      									</tr>
-      								</thead>
-  									<tbody>
-    									<tr>
-      										<th>Blockheight</th>
-      										<td><span id="blockHeight"></span></td>
-    									</tr>
-    									<tr>
-    										<th>blockLastHash</th>
-      										<td><span id="blockLastHash"></span></td>
-    									</tr>
-    									<tr>
-    										<th>networkId</th>
-      										<td><span id="networkId"></span></td>
-    									</tr>
-    									<tr>
-    										<th>numConnections</th>
-      										<td><span id="numConnections"></span></td>
-    									</tr>
-    									<tr>
-    										<th>numKnownPeers</th>
-      										<td><span id="numKnownPeers"></span></td>
-    									</tr>
-    									<tr>
-    										<th>state</th>
-      										<td><span id="state"></span></td>
-    									</tr>
-    									<tr>
-    										<th>uptime</th>
-      										<td><span id="uptime"></span></td>
-    									</tr>
-    									<tr>
-    										<th>version</th>
-      										<td><span id="version"></span></td>
-    									</tr>
-    									<tr>
-      										<th>Unix_Timestamp</th>
-      										<td><span id="Unix_Timestamp"></span></td>
-    									</tr>
-    									<tr>
-    										<th>Uncompressed_Chain_Size</th>
-      										<td><span id="Uncompressed_Chain_Size"></span></td>
-    									</tr>
-  									</tbody>
-									</table>
-							</div>
-                	    </div>
-                	</div>
+                          <div class="field">
+                            <div class="control">
+                              <div class="tags  has-addons">
+                              <span class="tag is-medium is-black">Blockheight</span>
+                              <span class="tag is-medium is-dark" id="blockHeight"></span>
+                    </div>
+                  </div>
                 </div>
-            </div>
- 			<script>
-				var json = (function() {
-				  var json = null;
-				  $.ajax({
-				    'async': false,
-				    'global': false,
-				    'url': "/assets/state/QRL_Node_Stats.json",
-				    'dataType': "json",
-				    'success': function(data) {
-			      json = data;
-				    }
-				  });
-				  return json;
-				})();
-				
-				document.getElementById("blockHeight").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockHeight));
-				document.getElementById("blockLastHash").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockLastHash));
-				document.getElementById("networkId").innerHTML = JSON.parse(JSON.stringify(json[0].info.networkId));
-				document.getElementById("numConnections").innerHTML = JSON.stringify(json[0].info.numConnections);
-				document.getElementById("numKnownPeers").innerHTML = JSON.stringify(json[0].info.numKnownPeers);
-				document.getElementById("state").innerHTML = JSON.parse(JSON.stringify(json[0].info.state));
-				document.getElementById("uptime").innerHTML = JSON.parse(JSON.stringify(json[0].info.uptime));
-				document.getElementById("version").innerHTML = JSON.parse(JSON.stringify(json[0].info.version));
-				document.getElementById("Unix_Timestamp").innerHTML = JSON.parse(JSON.stringify(json[1].Unix_Timestamp));
-				document.getElementById("Uncompressed_Chain_Size").innerHTML = JSON.parse(JSON.stringify(json[2].Uncompressed_Chain_Size));
-				document.getElementById("Tar_FileSize").innerHTML = JSON.parse(JSON.stringify(json[3].Tar_FileSize));
-				console.log(JSON.stringify(json));
-			</script>
-        </div>
+
+              <div class="field">
+                  <div class="control">
+                    <div class="tags  has-addons">
+                        <span class="tag is-small is-black">blockLastHash</span>
+                        <span class="tag is-small is-dark" id="blockLastHash">
+                        </span>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="field is-grouped is-grouped-multiline">
+                  <div class="control">
+                    <div class="tags  has-addons">
+                        <span class="tag is-medium is-black">networkId</span>
+                        <span class="tag is-medium is-dark" id="networkId">
+                        </span>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <div class="tags  has-addons">
+                        <span class="tag is-medium is-black">numConnections</span>
+                        <span class="tag is-medium is-dark" id="numConnections">
+                        </span>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="field is-grouped is-grouped-multiline">
+                  <div class="control">
+                    <div class="tags  has-addons">
+                        <span class="tag is-medium is-black">numKnownPeers</span>
+                        <span class="tag is-medium is-dark" id="numKnownPeers">
+                        </span>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <div class="tags  has-addons">
+                        <span class="tag is-medium is-black">state</span>
+                        <span class="tag is-medium is-dark" id="state">
+                        </span>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <div class="tags  has-addons">
+                        <span class="tag is-medium is-black">uptime</span>
+                        <span class="tag is-medium is-dark" id="uptime">
+                        </span>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="field is-grouped is-grouped-multiline">
+                  <div class="control">
+                    <div class="tags  has-addons">
+                        <span class="tag is-medium is-black">version</span>
+                        <span class="tag is-medium is-dark" id="version">
+                        </span>
+                    </div>
+                  </div>
+                  <div class="control">
+                    <div class="tags  has-addons">
+                        <span class="tag is-medium is-black">Unix_Timestamp</span>
+                        <span class="tag is-medium is-dark" id="Unix_Timestamp">
+                        </span>
+                    </div>
+                  </div>
+              </div>
+              <div class="field">
+                  <div class="control">
+                    <div class="tags  has-addons">
+                        <span class="tag is-medium is-black">Uncompressed_Chain_Size</span>
+                        <span class="tag is-medium is-dark" id="Uncompressed_Chain_Size">
+                        </span>
+                    </div>
+                  </div>
+              </div>
+              <hr>
+                      </div>
+                  </div>
+                </div>
+       <script>
+        var json = (function() {
+          var json = null;
+          $.ajax({
+            'async': false,
+            'global': false,
+            'url': "/assets/state/QRL_Node_Stats.json",
+            'dataType': "json",
+            'success': function(data) {
+            json = data;
+            }
+          });
+          return json;
+        })();
+
+        document.getElementById("blockHeight").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockHeight));
+        document.getElementById("blockLastHash").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockLastHash));
+        document.getElementById("networkId").innerHTML = JSON.parse(JSON.stringify(json[0].info.networkId));
+        document.getElementById("numConnections").innerHTML = JSON.stringify(json[0].info.numConnections);
+        document.getElementById("numKnownPeers").innerHTML = JSON.stringify(json[0].info.numKnownPeers);
+        document.getElementById("state").innerHTML = JSON.parse(JSON.stringify(json[0].info.state));
+        document.getElementById("uptime").innerHTML = JSON.parse(JSON.stringify(json[0].info.uptime));
+        document.getElementById("version").innerHTML = JSON.parse(JSON.stringify(json[0].info.version));
+        document.getElementById("Unix_Timestamp").innerHTML = JSON.parse(JSON.stringify(json[1].Unix_Timestamp));
+        document.getElementById("Uncompressed_Chain_Size").innerHTML = JSON.parse(JSON.stringify(json[2].Uncompressed_Chain_Size));
+        document.getElementById("Tar_FileSize").innerHTML = JSON.parse(JSON.stringify(json[3].Tar_FileSize));
+        console.log(JSON.stringify(json));
+      </script>
     </div>
+</div>
+</div>
 </section>

@@ -12,6 +12,137 @@
                         <p>Use these files to speed up the syncing time for a {{ site.coin }} testnet node.</p>
                     </div>
                     <div class="block">
+                        <p>The most secure approach is to spend the time to fully sync your node from scratch. This ensures your local chain is accurate to all other modes and that you are not running a forked chain. <br>
+
+                        If you don't need this security, you can use these files to bootstrap your node setup.</p>
+                    </div>
+                    <div class="block">
+                        <p>Un-tar these state files into your local <code>~/.qrl/data/</code> folder and start the node. This will start at the latest blockheight these files were made and only sync from there.</p>
+                    </div>
+
+                    <div class="columns">
+                    	<div class="column is-4 is-offset-2">
+                    			<p>QRL Testnet State Files</p>
+                	    </div>
+                	    <div class="column is-4">
+                    			<a href="/assets/state/QRL_Testnet_State.tar.gz">QRL_Testnet_State.tar.gz</a> - <span id="Tar_FileSize"></span>
+                	    </div>
+                	</div>
+                	<div class="columns">
+                    	<div class="column is-4 is-offset-2">
+                    			<p>QRL Testnet State Checksums</p>
+                	    </div>
+                	    <div class="column is-4">
+                    			<a href="/assets/state/Testnet_State_Checksums.txt">Testnet_State_Checksums.txt</a>
+                	    </div>
+                	</div>
+
+                	<div class="columns">
+                    	<div class="column is-8 is-offset-2">
+                    		<div class="table-container">
+  								<table class="table is-fullwidth">
+    								<!-- Your table content -->
+    								 <thead>
+    									<tr>
+      										<th><abbr title="Position">State</abbr></th>
+      										<th>Data</th>
+
+      									</tr>
+      								</thead>
+  									<tbody>
+    									<tr>
+      										<th>Blockheight</th>
+      										<td><span id="blockHeight"></span></td>
+    									</tr>
+    									<tr>
+    										<th>blockLastHash</th>
+      										<td><span id="blockLastHash"></span></td>
+    									</tr>
+    									<tr>
+    										<th>networkId</th>
+      										<td><span id="networkId"></span></td>
+    									</tr>
+    									<tr>
+    										<th>numConnections</th>
+      										<td><span id="numConnections"></span></td>
+    									</tr>
+    									<tr>
+    										<th>numKnownPeers</th>
+      										<td><span id="numKnownPeers"></span></td>
+    									</tr>
+    									<tr>
+    										<th>state</th>
+      										<td><span id="state"></span></td>
+    									</tr>
+    									<tr>
+    										<th>uptime</th>
+      										<td><span id="uptime"></span></td>
+    									</tr>
+    									<tr>
+    										<th>version</th>
+      										<td><span id="version"></span></td>
+    									</tr>
+    									<tr>
+      										<th>Unix_Timestamp</th>
+      										<td><span id="Unix_Timestamp"></span></td>
+    									</tr>
+    									<tr>
+    										<th>Uncompressed_Chain_Size</th>
+      										<td><span id="Uncompressed_Chain_Size"></span></td>
+    									</tr>
+  									</tbody>
+									</table>
+							</div>
+                	    </div>
+                	</div>
+                </div>
+            </div>
+ 			<script>
+				var json = (function() {
+				  var json = null;
+				  $.ajax({
+				    'async': false,
+				    'global': false,
+				    'url': "/assets/state/QRL_Testnet_Node_Stats.json",
+				    'dataType': "json",
+				    'success': function(data) {
+			      json = data;
+				    }
+				  });
+				  return json;
+				})();
+				
+				document.getElementById("blockHeight").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockHeight));
+				document.getElementById("blockLastHash").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockLastHash));
+				document.getElementById("networkId").innerHTML = JSON.parse(JSON.stringify(json[0].info.networkId));
+				document.getElementById("numConnections").innerHTML = JSON.stringify(json[0].info.numConnections);
+				document.getElementById("numKnownPeers").innerHTML = JSON.stringify(json[0].info.numKnownPeers);
+				document.getElementById("state").innerHTML = JSON.parse(JSON.stringify(json[0].info.state));
+				document.getElementById("uptime").innerHTML = JSON.parse(JSON.stringify(json[0].info.uptime));
+				document.getElementById("version").innerHTML = JSON.parse(JSON.stringify(json[0].info.version));
+				document.getElementById("Unix_Timestamp").innerHTML = JSON.parse(JSON.stringify(json[1].Unix_Timestamp));
+				document.getElementById("Uncompressed_Chain_Size").innerHTML = JSON.parse(JSON.stringify(json[2].Uncompressed_Chain_Size));
+				document.getElementById("Tar_FileSize").innerHTML = JSON.parse(JSON.stringify(json[3].Tar_FileSize));
+				console.log(JSON.stringify(json));
+			</script>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-halfheight has-text-centered is-grey " id="faucet">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-gapless">
+                <div class="column ">   
+                    <div class="block">
+                        <h1 class=" title second-title is-size-2 is-uppercase has-text-weight-bold is-spaced">{{site.coin}} Testnet </h1>
+                            <p class="subtitle is-5"> Bootstrap Files</p> 
+                    </div>
+                    
+                    <div class="block">
+                        <p>Use these files to speed up the syncing time for a {{ site.coin }} testnet node.</p>
+                    </div>
+                    <div class="block">
                         <p>The most secure approach is to spend the time to fully sync your node from scratch. This ensures your local chain is accurate to all other modes and that you are not running a forked chain.<br>
 
                         If you don't need this security, you can use these files to bootstrap your node setup.</p>
@@ -24,8 +155,7 @@
                     		<li>QRL Testnet State Files - <a href="/assets/state/QRL_Testnet_State.tar.gz">QRL_Testnet_State.tar.gz</a></li>
                     		<li>QRL Testnet State Checksums - <a href="/assets/state/Testnet_State_Checksums.txt">Testnet_State_Checksums.txt</a></li>
                     	</ul>
-                        <p class="is-italic is-size-7">
-                        </p>
+
                     </div>
                 </div>
             </div>

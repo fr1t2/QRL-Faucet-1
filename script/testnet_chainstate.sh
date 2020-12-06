@@ -27,7 +27,7 @@ rsync -a /home/$user/.qrl-testnet/data/state $stateDir
 tar -czvf $uploadDir/$fileName $stateDir/*
 
 chainState=$(sudo -H -u $user /home/$user/.local/bin/qrl --json --host 127.0.0.1 --port_pub 19010 state)
-chainSize=$(du -hs /home/$user/.qrl/data/state/ | awk '{print $1}')
+chainSize=$(du -hs /home/$user/.qrl-testnet/data/state/ | awk '{print $1}')
 tarFileSize=$(du -hs $uploadDir/$fileName | awk '{print $1}')
 
 # get the sha and md5 sums into a file

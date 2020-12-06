@@ -100,7 +100,7 @@
  			<script>
 				var testnetjson = (function() {
 				  var testnetjson = null;
-				  $.ajax({
+				  $.when( $.ajax({
 				    'async': false,
 				    'global': false,
 				    'url': "/assets/state/QRL_Testnet_Node_Stats.json",
@@ -108,7 +108,7 @@
 				    'success': function(data1) {
 			      testnetjson = data1;
 				    }
-				  });
+				  }).then());
 				  return testnetjson;
 				})();
 				

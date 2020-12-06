@@ -10,7 +10,6 @@
 # 
 
 epochNow=`date +%s`
-# uploadDir=/var/www/html/qrl.co.in/assets/QRL_state/
 uploadDir=/var/www/html/qrl.co.in/assets/state
 stateDir=/var/www/html/qrl/mainnet_state
 fileName="QRL_Mainnet_State.tar.gz"

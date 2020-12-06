@@ -5,16 +5,10 @@ console.log('args: ', args);
 
 
 async function main(){
-        const address = args[0];
+        const data = args[0];
 
-        const bytes = await explorerHelpers.hexAddressToRawAddress(address);
+        const bytes = await explorerHelpers.hexAddressToRawAddress(data);
         console.log(JSON.stringify(bytes));
-
-        const b32Address = await explorerHelpers.hexAddressToB32Address(address);
-        console.log(JSON.stringify(b32Address));
-
-        const b32bytes = await explorerHelpers.b32AddressToRawAddress(b32Address);
-        console.log(JSON.stringify(b32bytes));
 
 };
 

@@ -52,43 +52,43 @@
   									<tbody>
     									<tr>
       										<th>Blockheight</th>
-      										<td><span id="blockHeight"></span></td>
+      										<td><span id="testnet-blockHeight"></span></td>
     									</tr>
     									<tr>
     										<th>blockLastHash</th>
-      										<td><span id="blockLastHash"></span></td>
+      										<td><span id="testnet-blockLastHash"></span></td>
     									</tr>
     									<tr>
     										<th>networkId</th>
-      										<td><span id="networkId"></span></td>
+      										<td><span id="testnet-networkId"></span></td>
     									</tr>
     									<tr>
     										<th>numConnections</th>
-      										<td><span id="numConnections"></span></td>
+      										<td><span id="testnet-numConnections"></span></td>
     									</tr>
     									<tr>
     										<th>numKnownPeers</th>
-      										<td><span id="numKnownPeers"></span></td>
+      										<td><span id="testnet-numKnownPeers"></span></td>
     									</tr>
     									<tr>
     										<th>state</th>
-      										<td><span id="state"></span></td>
+      										<td><span id="testnet-state"></span></td>
     									</tr>
     									<tr>
     										<th>uptime</th>
-      										<td><span id="uptime"></span></td>
+      										<td><span id="testnet-uptime"></span></td>
     									</tr>
     									<tr>
     										<th>version</th>
-      										<td><span id="version"></span></td>
+      										<td><span id="testnet-version"></span></td>
     									</tr>
     									<tr>
       										<th>Unix_Timestamp</th>
-      										<td><span id="Unix_Timestamp"></span></td>
+      										<td><span id="testnet-Unix_Timestamp"></span></td>
     									</tr>
     									<tr>
     										<th>Uncompressed_Chain_Size</th>
-      										<td><span id="Uncompressed_Chain_Size"></span></td>
+      										<td><span id="testnet-Uncompressed_Chain_Size"></span></td>
     									</tr>
   									</tbody>
 									</table>
@@ -112,16 +112,16 @@
 				  return json;
 				})();
 				
-				document.getElementById("blockHeight").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockHeight));
-				document.getElementById("blockLastHash").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockLastHash));
-				document.getElementById("networkId").innerHTML = JSON.parse(JSON.stringify(json[0].info.networkId));
-				document.getElementById("numConnections").innerHTML = JSON.stringify(json[0].info.numConnections);
-				document.getElementById("numKnownPeers").innerHTML = JSON.stringify(json[0].info.numKnownPeers);
-				document.getElementById("state").innerHTML = JSON.parse(JSON.stringify(json[0].info.state));
-				document.getElementById("uptime").innerHTML = JSON.parse(JSON.stringify(json[0].info.uptime));
-				document.getElementById("version").innerHTML = JSON.parse(JSON.stringify(json[0].info.version));
-				document.getElementById("Unix_Timestamp").innerHTML = JSON.parse(JSON.stringify(json[1].Unix_Timestamp));
-				document.getElementById("Uncompressed_Chain_Size").innerHTML = JSON.parse(JSON.stringify(json[2].Uncompressed_Chain_Size));
+				document.getElementById("testnet-blockHeight").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockHeight));
+				document.getElementById("testnet-blockLastHash").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockLastHash));
+				document.getElementById("testnet-networkId").innerHTML = JSON.parse(JSON.stringify(json[0].info.networkId));
+				document.getElementById("testnet-numConnections").innerHTML = JSON.stringify(json[0].info.numConnections);
+				document.getElementById("testnet-numKnownPeers").innerHTML = JSON.stringify(json[0].info.numKnownPeers);
+				document.getElementById("testnet-state").innerHTML = JSON.parse(JSON.stringify(json[0].info.state));
+				document.getElementById("testnet-uptime").innerHTML = JSON.parse(JSON.stringify(json[0].info.uptime));
+				document.getElementById("testnet-version").innerHTML = JSON.parse(JSON.stringify(json[0].info.version));
+				document.getElementById("testnet-Unix_Timestamp").innerHTML = JSON.parse(JSON.stringify(json[1].Unix_Timestamp));
+				document.getElementById("testnet-Uncompressed_Chain_Size").innerHTML = JSON.parse(JSON.stringify(json[2].Uncompressed_Chain_Size));
 				document.getElementById("Tar_FileSize").innerHTML = JSON.parse(JSON.stringify(json[3].Tar_FileSize));
 				console.log(JSON.stringify(json));
 			</script>

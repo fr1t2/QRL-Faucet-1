@@ -556,16 +556,16 @@ input[type=number] {
 }
 
 .modal-background {
-  background-color: rgba(11,24,30, 0.89);
+  background-color: rgba(11,24,30, 0.95);
 }
 
 .modal-content,
 .modal-card {
   margin: 0 20px;
   max-height: calc(100vh - 160px);
-  overflow: auto;
+  overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 85%;
 }
 
 @media screen and (min-width: 769px) {
@@ -573,7 +573,7 @@ input[type=number] {
   .modal-card {
     margin: 0 auto;
     max-height: calc(100vh - 40px);
-    width: 640px;
+    width: 85%;
   }
 }
 
@@ -634,6 +634,6 @@ input[type=number] {
   background-color: white;
   flex-grow: 1;
   flex-shrink: 1;
-  overflow: auto;
+  overflow: hidden;
   padding: 20px;
 }

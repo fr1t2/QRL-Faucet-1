@@ -1,49 +1,111 @@
 <section class="hero  is-fullheight is-dark has-text-centered " id="contact">
         <div class="hero-body">
             <div class="container has-text-centered" id="page-section">
-                <div class="section">
+                <div class="section id="{{ page.title }}"">
                     <div class="columns ">
-                        <div class="column is-marginless">
+                        <div class="column ">
                             {% if page.title %}
-                                <h1 class="title is-1 is-uppercase has-text-weight-bold ">
+                                <h2 class="title is-2 is-uppercase has-text-weight-bold ">
                                     {{ page.title }}
-                                </h1>
+                                </h2>
                                 <hr class=" has-background-dark">
                             {% endif %}
                         </div>
                     </div>
-                    <div class="columns is-marginless">
-                        <div class="column has-text-left" id="{{ page.title }}">
+
+                    <div class="columns ">
+                        <div class="column has-text-left" >
                             <div class="block">
-                                {{ site.contact-statement }}
+                                <p>
+                                    {{ site.contact-statement }} 
+                                </p>
                             </div>
-                            <br>
+                            <div class="block">
+                                <p>
+                                    We are looking for others that share this vision. If you would like to join our team and help
+                                    build the next new great thing, drop us a line. Currently this is small focused group of advocates pushing
+                                    secure cryptography and radical ideals into functional tools for the masses.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="columns is-marginless ">
-                        <div class="column box has-background-black-ter is-8 is-offset-2" id="{{ page.title }}">
-                            <div class="block">
-                                <h4 class="title is-size-4 has-text-grey-lighter">Reach Out!</h4>
-                               <p class="has-text-grey-lighter">
-                                    Have a question? Interested in contributing?
-                                </p>     
-                            </div>
-                            <div class="columns">
-                                <div class="column is-6 is-offset-3">
-                                    <div class="control has-text-centered">
-                                        <dl>
-                                            <dt class="is-uppercase has-text-weight-bold is-size-5">Email: </dt>
-                                            <dd class="is-size-5 has-text-light is-uppercase">
-                                                <a href="mailto:{{ site.email }}">
-                                                    {{ site.email }}
-                                                </a>
-                                            </dd>
-                                        </dl>
-                                        <br>
+                    <div class="columns">
+                        <div class="column is-4 is-offset-4" >
+                            <div class="field">
+                                <div class="control">
+                                    <div class="tags  has-addons">
+                                        <span class="tag is-medium is-black">Email:</span>
+                                        <span class="tag is-medium is-dark"><a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
+                    </div>
+                    <div class="is-hidden-mobile">
+                    <div class="columns ">
+                        <div class="column ">
+                            <h2 class="title is-2 is-uppercase has-text-weight-bold ">
+                                Donate and Support
+                            </h2>
+                                <hr class=" has-background-dark">
+                        </div>
+                    </div>
+                    <div class="columns ">
+                        <div class="column has-text-left" >
+                            <div class="block">
+                                <p>
+                                    This is a self funded, non-official project. If you want to help with server costs or buy us a coffee
+                                    please send donations to:
+                                </p>
+                            </div>
+                            <div class="columns">
+                                <div class="column " >
+                                    <div class="field ">
+                                        <div class="control">
+                                            <div class="tags  has-addons">
+                                                <span class="tag is-medium is-black">QRL:</span>
+                                                <span class="tag is-medium is-dark">{{ site.coin_address }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                            <div class="tags  has-addons">
+                                                <span class="tag is-medium is-black">BTC:</span>
+                                                <span class="tag is-medium is-dark">{{ site.BTC_address }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                            <div class="tags  has-addons">
+                                                <span class="tag is-medium is-black">ETH:</span>
+                                                <span class="tag is-medium is-dark">{{ site.ETH_address }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                            <div class="tags  has-addons">
+                                                <span class="tag is-medium is-black">Papal:</span>
+                                                <span class="tag is-medium is-dark"><a href="https://{{ site.paypal_me }}" target="_blank">{{ site.paypal_me }}</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <div class="control">
+                                            <div class="tags  has-addons">
+                                                <span class="tag is-medium is-black">Cash app:</span>
+                                                <span class="tag is-medium is-dark"><a href="https://{{ site.cashapp }}" target="_blank">{{ site.cashapp }}</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>

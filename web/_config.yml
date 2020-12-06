@@ -27,39 +27,38 @@ heroimage: /assets/images/dots.png
 hero-footer: 
 
 # Blockchain info
+
+# Faucet info
+faucet_address:
+
 # Coin short code
 coin: QRL
 explorer-url: https://explorer.theqrl.org
 wallet-url: https://wallet.theqrl.org
+testnet-explorer-url: https://testnet-explorer.theqrl.org
+testnet-wallet-url: https://testnet-wallet.theqrl.org
 coin_repo: https://github.com/theqrl/qrl
+
+
+# Donation Info
 coin_address: Q010500542771ce655a898ce85d66adb07d6c5db24323fc3d720079d454133289ee8dc907bfe53a
 BTC_address: 3MthYPviGSMi8Vyz3nHrQEPBDWaibDrPyC
 ETH_address: "0x310E7B86027B204BBB1A6BDa8fdEB44580d1A435"
+paypal_me: paypal.me/fr1t2
+cashapp: cash.app/fr1t2
 # site code info
 site_repo: https://github.com/theqrl-community/QRL-Faucet.git
-
 developed_by: #https://merkletreellc.com
 developed_by_name: Merkle Tree
-
 contact-statement: QRL.co.in was started with big ambitions to bring secure tools to the masses. We are excited about future thinking projects and innovation that propels everyone into a better future.
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
 email: info@qrl.co.in
-facebook_username: 
-twitter_username: 
-instagram_username: 
-linkedin_username: 
 github_username:  
-youtube_channel_id: 
-reddit_username: 
-behance_username: 
-dribbble_username: 
-spotify_username: 
 
 # Google Analytics
 google-analytics: UA-113155333-1
-
 
 # Disqus
 disqus-shortname: 

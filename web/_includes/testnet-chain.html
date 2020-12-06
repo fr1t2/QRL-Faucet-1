@@ -98,32 +98,32 @@
                 </div>
             </div>
  			<script>
-				var json = (function() {
-				  var json = null;
+				var testnetjson = (function() {
+				  var testnetjson = null;
 				  $.ajax({
 				    'async': false,
 				    'global': false,
 				    'url': "/assets/state/QRL_Testnet_Node_Stats.json",
 				    'dataType': "json",
 				    'success': function(data) {
-			      json = data;
+			      testnetjson = data;
 				    }
 				  });
-				  return json;
+				  return testnetjson;
 				})();
 				
-				document.getElementById("testnet-blockHeight").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockHeight));
-				document.getElementById("testnet-blockLastHash").innerHTML = JSON.parse(JSON.stringify(json[0].info.blockLastHash));
-				document.getElementById("testnet-networkId").innerHTML = JSON.parse(JSON.stringify(json[0].info.networkId));
-				document.getElementById("testnet-numConnections").innerHTML = JSON.stringify(json[0].info.numConnections);
-				document.getElementById("testnet-numKnownPeers").innerHTML = JSON.stringify(json[0].info.numKnownPeers);
-				document.getElementById("testnet-state").innerHTML = JSON.parse(JSON.stringify(json[0].info.state));
-				document.getElementById("testnet-uptime").innerHTML = JSON.parse(JSON.stringify(json[0].info.uptime));
-				document.getElementById("testnet-version").innerHTML = JSON.parse(JSON.stringify(json[0].info.version));
-				document.getElementById("testnet-Unix_Timestamp").innerHTML = JSON.parse(JSON.stringify(json[1].Unix_Timestamp));
-				document.getElementById("testnet-Uncompressed_Chain_Size").innerHTML = JSON.parse(JSON.stringify(json[2].Uncompressed_Chain_Size));
-				document.getElementById("Tar_FileSize").innerHTML = JSON.parse(JSON.stringify(json[3].Tar_FileSize));
-				console.log(JSON.stringify(json));
+				document.getElementById("testnet-blockHeight").innerHTML = JSON.parse(JSON.stringify(testnetjson[0].info.blockHeight));
+				document.getElementById("testnet-blockLastHash").innerHTML = JSON.parse(JSON.stringify(testnetjson[0].info.blockLastHash));
+				document.getElementById("testnet-networkId").innerHTML = JSON.parse(JSON.stringify(testnetjson[0].info.networkId));
+				document.getElementById("testnet-numConnections").innerHTML = JSON.stringify(testnetjson[0].info.numConnections);
+				document.getElementById("testnet-numKnownPeers").innerHTML = JSON.stringify(testnetjson[0].info.numKnownPeers);
+				document.getElementById("testnet-state").innerHTML = JSON.parse(JSON.stringify(testnetjson[0].info.state));
+				document.getElementById("testnet-uptime").innerHTML = JSON.parse(JSON.stringify(testnetjson[0].info.uptime));
+				document.getElementById("testnet-version").innerHTML = JSON.parse(JSON.stringify(testnetjson[0].info.version));
+				document.getElementById("testnet-Unix_Timestamp").innerHTML = JSON.parse(JSON.stringify(testnetjson[1].Unix_Timestamp));
+				document.getElementById("testnet-Uncompressed_Chain_Size").innerHTML = JSON.parse(JSON.stringify(testnetjson[2].Uncompressed_Chain_Size));
+				document.getElementById("Tar_FileSize").innerHTML = JSON.parse(JSON.stringify(testnetjson[3].Tar_FileSize));
+				console.log(JSON.stringify(testnetjson));
 			</script>
         </div>
     </div>

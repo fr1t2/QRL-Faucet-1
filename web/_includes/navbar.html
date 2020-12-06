@@ -50,6 +50,12 @@
                     <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/faucet">FAUCET</a>
                 {% endunless %}
 
+                {% unless page.url == "/chain/" %}
+                    <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/chain">CHAIN</a>
+                {% endunless %}
+                {% if page.url == "/chain/" %}
+                    <a class="navbar-item is-active" href="{{site.url}}{{site.baseurl}}/chain">CHAIN</a>
+                {% endif %}
 
 <!--
                 {% if page.url == "/about/#contact/" %}

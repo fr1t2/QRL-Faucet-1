@@ -1,15 +1,21 @@
 <nav class="navbar is-dark is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
     <div class="container">
-
         <!-- logo or branding image on left side -->
         <div class="navbar-brand ">
+            <figure class="image is-32x32 mt-2">
+                <a href="{% if page.layout == 'default' %}
+                {{site.url}}{{site.baseurl}}/#
+                {% else %}
+                {{site.url}}{{site.baseurl}}/
+                {% endif %}"><img src="/assets/images/favicon.png"></a>
+            </figure>
             <a class="navbar-item"
                 href="{% if page.layout == 'default' %}
                 {{site.url}}{{site.baseurl}}/#
                 {% else %}
                 {{site.url}}{{site.baseurl}}/
                 {% endif %}">
-                <strong class="is-size-3">{{site.title}}</strong>
+                <strong>  {{site.title}}</strong>
             </a>
             <div class="navbar-burger" data-target="navbar-menu">
                 <span></span>
@@ -21,8 +27,8 @@
         <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
         <div class="navbar-menu is-dark" id="navbar-menu">
             <!-- navbar items | left side -->
-            <!-- <div class="navbar-start">
-            </div> -->
+            <div class="navbar-start">
+            </div><!--  -->
             <!-- navbar items | right side -->
             <div class="navbar-end">
                 <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"

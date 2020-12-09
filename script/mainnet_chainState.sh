@@ -3,6 +3,8 @@
 # Script grabs the curent state files, tar's them up, hashes the tar file and notarises 
 # it on the QRL blockchain through a message_tx.
 
+# FIX-ME
+
 # This script requires 
 # - a fully synced node
 # - a QRL wallet with funds enough for the TX fee

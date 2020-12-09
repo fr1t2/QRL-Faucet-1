@@ -2,95 +2,37 @@
     <div class="hero-body">
         <div class="container">
             <div class="columns is-gapless">
-                <div class="column ">   
+                <div class="column ">  
+                    <div class="notification is-success">
+                        <button class="delete"></button>
+                        <h3 class="is-size-4 has-text-grey-darker has-text-weight-bold">
+                        The faucet is still under active development. An announcement will be to the community once complete!</h3>
+
+                    </div> 
                     <div class="block">
                         <h1 class=" title second-title is-size-2 is-uppercase has-text-weight-bold is-spaced">{{site.coin}} Faucet</h1>
-                            <p class="subtitle is-5">For developers working with the {{ site.coin }} Blockchain</p> 
+                            <p class="subtitle is-5">Free funds from the {{ site.coin }} Blockchain</p> 
                     </div>
                     <div class="block">
                         {% include faucetForm.html %}
                     </div>
                     <div class="block">
-                        <p>Faucet giving out DevNet and Testnet {{ site.coin }} funds.</p>
+                        <p></p>
                     </div>
                     <br>
-                    <div class="block">
-                        <div class="box has-background-black title is-size-5">
-                            <p>
-                                The Faucet is under development and will be released soon. 
-                            </p>
-                        </div>
-                    </div>
+
                     <div class="block">
                         <p class="is-italic is-size-7">
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="columns">
-                <div class="column">   
-                    <div class="block">
-                        <span class="button is-rounded is-uppercase is-black is-outlined is-inverted " id="coffee" >Buy us a coffee!<br>  </span>
 
-                    </div>
 
-                </div>
-            </div>
-            <div class="modal is-large">
-                <div class="modal-background">
-                </div>
-                <div class="modal-content">
-                    <hr class=" has-background-dark">
-                    <div class="columns">
-                        <div class="column">
-                            <h2 class="title is-3 is-uppercase has-text-weight-bold ">
-                                Donate and Support
-                            </h2>
-                        </div>
-                    </div>
-                    <div class="columns">
-                        <div class="column">
-                            <div class="field ">
-                                <div class="control">
-                                    <div class="tags  has-addons">
-                                        <span class="tag is-medium is-black">QRL:</span>
-                                        <span class="tag is-medium is-dark">{{ site.coin_address }}</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control">
-                                    <div class="tags  has-addons">
-                                        <span class="tag is-medium is-black">BTC:</span>
-                                        <span class="tag is-medium is-dark">{{ site.BTC_address }}</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="control">
-                                    <div class="tags  has-addons">
-                                        <span class="tag is-medium is-black">ETH:</span>
-                                        <span class="tag is-medium is-dark">{{ site.ETH_address }}</span>
-                                    </div>
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
-                <button class="modal-close " aria-label="close"></button>
-            </div>
+
+
+
         </div>
     </div>
 </section>
-
-<script type="text/javascript">
-    $("#coffee").click(function() {
-  $(".modal").addClass("is-active");  
-});
-
-$(".modal-close").click(function() {
-   $(".modal").removeClass("is-active");
-});
-
-</script>

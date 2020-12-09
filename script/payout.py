@@ -5,7 +5,7 @@
 #
 # You must setup the settings here to reflect how you want the faucet to work. 
 #
-#
+## FIX-ME
 
 import requests
 import json

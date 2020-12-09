@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# FIX-ME
+
 # getBalance.sh grabe the walletAPI address and gets the balance from the network.
 # This script shows the curent faucet balance in the main page.
 # Define the ListAddresses into variable and format to simple output

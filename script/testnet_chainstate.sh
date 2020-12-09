@@ -25,9 +25,9 @@ mkdir $stateDir -p
 rsync -a /home/$user/.qrl-testnet/data/state $stateDir
 
 # zip them up a little
-tar -czvf $uploadDir/$fileName $stateDir/*
+tar --directory=$stateDir -czvf $uploadDir/$fileName $stateDir/*
 
-chainState=$(sudo -H -u $user /home/$user/.local/bin/qrl --json --host 127.0.0.1 --port_pub 19010 state)
+chainState=$(sudo -H -u $user /home/$user/.local/bin/qrl --json --host 127.0.0.1 --port_pub 19020 state)
 chainSize=$(du -hs /home/$user/.qrl-testnet/data/state/ | awk '{print $1}')
 tarFileSize=$(du -hs $uploadDir/$fileName | awk '{print $1}')
 sha3512=`openssl dgst -sha3-512 ${uploadDir}/${fileName} | awk '{print $2}'`

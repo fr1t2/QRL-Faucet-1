@@ -47,28 +47,28 @@ echo "-------- SHA3-512 Sum --------" >> ${uploadDir}/${checkSumFileName}
 echo $sha3512 >> ${uploadDir}/${checkSumFileName}
 echo "" >> ${uploadDir}/${checkSumFileName} 
 echo "Verify from linux cli with:" >> ${uploadDir}/${checkSumFileName}
-echo "openssl dgst -sha3-512 ${checkSumFileName}" >> ${uploadDir}/${checkSumFileName}
+echo "openssl dgst -sha3-512 ${fileName}" >> ${uploadDir}/${checkSumFileName}
 echo "" >> ${uploadDir}/${checkSumFileName}
 
 echo "-------- SHA3-256 Sum --------" >> ${uploadDir}/${checkSumFileName}
 echo $sha3256 >> ${uploadDir}/${checkSumFileName}
 echo "" >> ${uploadDir}/${checkSumFileName} 
 echo "Verify from linux cli with:" >> ${uploadDir}/${checkSumFileName}
-echo "openssl dgst -sha3-256 ${checkSumFileName}" >> ${uploadDir}/${checkSumFileName}
+echo "openssl dgst -sha3-256 ${fileName}" >> ${uploadDir}/${checkSumFileName}
 echo "" >> ${uploadDir}/${checkSumFileName}
 
 echo "-------- SHA-256 Sum --------" >> ${uploadDir}/${checkSumFileName}
 echo $sha256sum >> ${uploadDir}/${checkSumFileName}
 echo "" >> ${uploadDir}/${checkSumFileName} 
 echo "Verify from linux cli with:" >> ${uploadDir}/${checkSumFileName}
-echo "sha256sum ${checkSumFileName}" >> ${uploadDir}/${checkSumFileName}
+echo "sha256sum ${fileName}" >> ${uploadDir}/${checkSumFileName}
 echo "" >> ${uploadDir}/${checkSumFileName}
 
 echo "-------- MD5 Sum --------" >> ${uploadDir}/${checkSumFileName}
 echo $md5sum >> ${uploadDir}/${checkSumFileName}
 echo "" >> ${uploadDir}/${checkSumFileName}
 echo "Verify from linux cli with:" >> ${uploadDir}/${checkSumFileName}
-echo "md5sum ${checkSumFileName}" >> ${uploadDir}/${checkSumFileName}
+echo "md5sum ${fileName}" >> ${uploadDir}/${checkSumFileName}
 
 
 # Write the STATS File for consumption by the server for data
